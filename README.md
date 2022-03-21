@@ -1,5 +1,5 @@
 # Krakenmagen's Dynamical Notation for 5D-Chess
-A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on Shad's-5D-chess-algebraic-notation
+A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 5D chess algebraic notation**
 
 ## [Shad's 5D Chess Algebraic Notation](https://github.com/adri326/5dchess-notation/)
  
@@ -11,7 +11,7 @@ aside from this, turns are separated with /.
 >
 > In my opinion this notation is extremely clean and clear. Sincesince it is so verbose, it avoids a lot of edge cases that may be problems in other notations. This notation is definitely my #2 favorite and a gatekeeper/ benchmark for which to compare other notations. My only complaint is the notation does not bring up the problem of order mattering when branching multiple times in one turn.
 >
-> quoted from [5D Chess Notation Standard Proposal](https://docs.google.com/document/d/1-SnsdYIzrGao0ToyGXSaoEd_0tYKxYePO1C-Bp5ziXA/edit#)
+> *quoted from [5D Chess Notation Standard Proposal](https://docs.google.com/document/d/1-SnsdYIzrGao0ToyGXSaoEd_0tYKxYePO1C-Bp5ziXA/edit#)*
 
 ## Recall from [Shad's Notation](https://github.com/adri326/5dchess-notation/)
 * A **turn** is an alternation between white's sub-turn and black's sub-turn. Each player may only make moves during their (sub-)turn. This differs from a board step, as playing on some boards becomes optionnal when new timelines are created.
