@@ -13,7 +13,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 * More text needed, which causes hardness for nearsighted people to read. 
 * The topological formulation involves a huge amount of spaces, which rapidly increases the file size.  
 
-### VS
+### Comparism
 #### Shad's Notation
 ```
 1. (0T1)Nd3 / (0T1)Nc5
