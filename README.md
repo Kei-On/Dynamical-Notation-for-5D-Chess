@@ -8,6 +8,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on [Shad's 5
 * Contains information of parallel actions during one turn. 
 * Contains information of which action causes creation of which board/timeline. 
 * The machine can read regardless of how you reorder the cells(basic unit of the dynamical notation). 
+* Easy to translate from/to Shad's 5D chess algebraic notation. 
 
 ### Cons
 * More text needed, which causes hardness for nearsighted people to read. 
