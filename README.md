@@ -5,6 +5,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on Shad's-5D
 
 ### [Shad's 5D chess algebraic notation](https://github.com/adri326/5dchess-notation/)
 
+> [5D Chess Notation Standard Proposal](https://docs.google.com/document/d/1-SnsdYIzrGao0ToyGXSaoEd_0tYKxYePO1C-Bp5ziXA/edit#)
 > Shad’s notation is meant to work with his engine, which means machine readability was a primary concern when creating the notation. The examples of this notation contain a header which mimics PGN. 
 > 
 > The symbols that are used in this notation are + for check * for softmate # for checkmate > for a temporal move >> for a branching move, and ~ for a move that rewinds the present. the symbol x is also used to denote a capture of a piece for all types of moves.
