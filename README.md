@@ -14,7 +14,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 
 ### VS
 #### Shad's Notation
-``1. (0T1)Nd3 / (0T1)Nc5
+```1. (0T1)Nd3 / (0T1)Nc5
 2. (0T2)Nxc5+ / (0T2)bxc5
 3. (0T3)g3 / (0T3)g4
 4. (0T4)Bg2 / (0T4)d5
@@ -22,10 +22,10 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 6. (0T6)Nb1>>(0T5)b3 / (1T5)Bb6
 7. (1T6)Nc3 / (0T6)Ne7>(1T6)e5
 8. (0T7)a4 (1T7)O-O {to the right} / (0T7)Be5>>(0T6)e4
-9. (-1T7)Bxe4 / (-1T7)dxe4 (1T7)c4``
+9. (-1T7)Bxe4 / (-1T7)dxe4 (1T7)c4```
 
 #### Dynamical Notation algebraical presentation
-``<0T1>1[Nd3]
+```<0T1>1[Nd3]
 <0T1>1.5[Nc5]
 <0T2>2[Nxc5+]
 <0T2>2.5[bxc5]
@@ -44,16 +44,16 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 <0T7>8.5[Be5>>(0T6)e4]
 <-1T7>9[Bxe4]
 <-1T7>9.5[dxe4]
-<1T7>9.5#2[c4]``
+<1T7>9.5#2[c4]```
 
 #### Dynamical Notation topological presentation
-``                                                 <0T1>1[Nd3] / <0T1>1.5[Nc5]                                                                                                     
+```                                                 <0T1>1[Nd3] / <0T1>1.5[Nc5]                                                                                                     
                                                  <0T2>2[Nxc5+] / <0T2>2.5[bxc5]                                                                                                  
                                                  <0T3>3[g3] / <0T3>3.5[g4]                                                                                                       
                                                  <0T4>4[Bg2] / <0T4>4.5[d5]                                                                                                      
 -<1T5>-6[(0T6)Nb1>>(0T5)b3] / <1T5>6.5[Bb6]      <0T5>5[O-O] / <0T5>5.5[Be5] / -<0T5>-6[(0T6)Nb1>>(0T5)b3@(1T5)]+                                                                
  <1T6>7[Nc3] / -<1T6>-7.5[(0T6)Ne7>(1T6)e5]      <0T6>6[Nb1>>(0T5)b3]+ / <0T6>7.5[Ne7>(1T6)e5]+ / -<0T6>-8.5[(0T7)Be5>>(0T6)e4@(-1T6)]+     -<-1T6>-8.5[(0T7)Be5>>(0T6)e4]       
- <1T7>8#2[O-O] / <1T7>9.5#2[c4]                  <0T7>8[a4] / <0T7>8.5[Be5>>(0T6)e4]+                                                        <-1T7>9[Bxe4] / <-1T7>9.5[dxe4]     ``
+ <1T7>8#2[O-O] / <1T7>9.5#2[c4]                  <0T7>8[a4] / <0T7>8.5[Be5>>(0T6)e4]+                                                        <-1T7>9[Bxe4] / <-1T7>9.5[dxe4]     ```
 
 ## Recall: [Shad's 5D Chess Algebraic Notation](https://github.com/adri326/5dchess-notation/)
  
