@@ -127,6 +127,12 @@ We want to overwrite some terms, and add some new terms.
 * A **algebraical formulation** is a formulation that sorts all cells using thier **steps** as key. 
 * A **topological formulation** is a formulation that rearranges every **cell**, and place it on the location where the **board** where the **cell's move** starts from is located at. 
 
+## Advanced Terms for Topological Formulation
+* A **block** consists of one or more **cells** that share the same **coordinate**. 
+* An **out-going cell** has a positive **step**. **Out-going cells** contain the information of player inputs. 
+* An **in-coming cell** has a negative **step**. **Out-going cells** contain the information of **moves** that directs to its **block**. When translated to Shed's notation, all **in-coming cells** are discarded. 
+* A ****
+
 ## Syntax
 
 ## Recommanded Formulation
@@ -163,6 +169,7 @@ nota = '''
 nota = shed2dyna(nota)
 print(nota.topologic())
 ```
-
-
-
+ 
+ 
+ 
+ 
