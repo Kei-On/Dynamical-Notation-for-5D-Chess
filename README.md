@@ -132,7 +132,7 @@ We want to overwrite some terms, and add some new terms.
 ## Recommanded Formulation
 
 ## Playground
-A roughly achieved python approach to the realization of converting Shad's notation to dynamical notation is presented here. See example: 
+A roughly achieved python approach to the realization of converting Shad's notation to dynamical notation is presented [here](https://github.com/Kei-On/Dynamical-Notation-for-5D-Chess/blob/main/dyna5D.py). See usage: 
 ```
 nota = '''
 1. (0T1)Nd3 / (0T1)Nc5
