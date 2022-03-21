@@ -166,7 +166,9 @@ class Dyna5D(str):
     if flip:
       arr = np.flip(arr,1)
     return arr2str(arr,space)
-  def shed2dyna(notation,joint = "\n"):
+  
+  
+def shed2dyna(notation,joint = "\n"):
   ans = ""
   notation = re.sub("\{.*?\}","",notation)
   for line,i in re.findall(r"((\d+)\..+\n)",notation):
