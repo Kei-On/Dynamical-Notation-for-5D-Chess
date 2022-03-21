@@ -35,5 +35,5 @@ We want to overwrite some terms, and add some new terms.
 * A **turn** is a natural number with the prefix "T". 
 * A **line** is an integer with the prefix "L". 
 * A **move** is the creation of
-* The operation **a#b(the b-th a)** is defined `a#b:=a+0.5-0.5^b (for a=n/2, n=2,3,4,5...), a#b:=-((-a)#b) (for a=-n/2, n=2,3,4,5...)`
+* The operation **#** is defined `A#B:=A+0.5-0.5^B (for a=n/2, n=2,3,4,5...), A#B:=-((-A)#B) (for A=-n/2, n=2,3,4,5...)`. The expression `A#B` is read as "the B-th A". 
 * A **step** is a number `s=a#b`, where `a` is a 
