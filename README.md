@@ -3,7 +3,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on Shad's-5D
 
 ## Motivation
 
-### [Shad's 5D chess algebraic notation][https://github.com/adri326/5dchess-notation/]
+### [Shad's 5D chess algebraic notation](https://github.com/adri326/5dchess-notation/)
 
 > Shad’s notation is meant to work with his engine, which means machine readability was a primary concern when creating the notation. The examples of this notation contain a header which mimics PGN. 
 > 
