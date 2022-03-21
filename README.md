@@ -7,10 +7,11 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 * Can be demonstrated both algebraically and topologically. 
 * Contains information of parallel actions during one turn. 
 * Contains information of which action causes creation of which board/timeline. 
+* The machine can read regardless of how you reorder the cells(basic unit of the dynamical notation). 
 
 ### Cons
 * More text needed, which causes hardness for nearsighted people to read. 
-* The topological presentation involves a huge amount of spaces, which rapidly increases the file size.  
+* The topological formulation involves a huge amount of spaces, which rapidly increases the file size.  
 
 ### VS
 #### Shad's Notation
@@ -40,7 +41,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 23. (-2T19)Bb6 / (-2T19)Rb7
 ```
 
-#### Dynamical notation algebraical presentation
+#### Dynamical notation algebraical formulation
 ```
 <0T1>1[Nd3] <0T1>1.5[Nc5] <0T2>2[Nxc5+] <0T2>2.5[bxc5] <0T3>3[g3] <0T3>3.5[g4] 
 <0T4>4[Bg2] <0T4>4.5[d5] <0T5>5[O-O] <0T5>5.5[Be5] <0T6>6[Nb1>>(0T5)b3] <1T5>6.5[Bb6] <1T6>7[Nc3] <0T6>7.5[Ne7>(1T6)e5] 
@@ -61,7 +62,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 <-2T19>23[Bb6] <-2T19>23.5[Rb7]
 ```
 
-#### Dynamical notation topological presentation (vertical)
+#### Dynamical notation topological formulation (vertical)
 ```
                                                                <0T1>1[Nd3] / <0T1>1.5[Nc5]                                                                                                                                                                                                  
                                                                <0T2>2[Nxc5+] / <0T2>2.5[bxc5]                                                                                                                                                                                               
@@ -122,11 +123,46 @@ We want to overwrite some terms, and add some new terms.
 * A **cell** is a **cell's coordinate** writen along with a **step** and a **move** with no space added in between. If the **cell's coordinate** is equal to the **super-physical coordinate** right after `[` in the **move**, the **super-physical coordinate** can be omitted. For example, `<4T5>5.5#2[(4T5)e3]` and `<4T5>5.5#2[e3]`(recommanded) are considered equivalent. 
 * The python expression `"<{}T{}>{}#{}[{}]".format(turn,line,step,substep,move)` returns a **legal cell**, if `turn` and `line` are integers, `step=n/2, n and substep are integers`, and `move` is a legal move from Shad's notation, and otherwise returns an **illegal cell**. 
 * A **(Krakenmagen's) dynamical notation (for 5D chess)** is a text that contains at least one **legal cell**. 
+* A **formulation** is a rule to reorder all cells contained in a **dynamical notation**. 
+* A **algebraical formulation** is a formulation that sorts all cells using thier **steps** as key. 
+* A **topological formulation** is a formulation that rearranges every **cell**, and place it on the location where the **board** where the **cell's move** starts from is located at. 
 
 ## Syntax
 
-## Playground
+## Recommanded Formulation
 
+## Playground
+A roughly coded python approach to the realization of converting Shad's notation to dynamical notation is presented here. See example: 
+```
+nota = '''
+1. (0T1)Nd3 / (0T1)Nc5
+2. (0T2)Nxc5+ / (0T2)bxc5
+3. (0T3)g3 / (0T3)g4
+4. (0T4)Bg2 / (0T4)d5
+5. (0T5)O-O {to the right} / (0T5)Be5
+6. (0T6)Nb1>>(0T5)b3 / (1T5)Bb6
+7. (1T6)Nc3 / (0T6)Ne7>(1T6)e5
+8. (0T7)a4 (1T7)O-O {to the right} / (0T7)Be5>>(0T6)e4
+9. (-1T7)Bxe4 / (-1T7)dxe4 (1T7)c4
+10. (1T8)Nb3>(0T8)d3 (-1T8)a4 / (-1T8)Bd4 (0T8)Kd7>(1T8)d6
+11. (-1T9)Ra3 (0T9)Ra3 (1T9)b3 / (-1T9)Bd4>x(0T9)d3 (1T9)cxb3
+12. (-1T10)d3 (0T10)cxd3 (1T10)Ba3 / (-1T10)Nd5 (0T10)Rb7 (1T10)c5?
+13. (-1T11)dxe4 (0T11)Rc3 (1T11)axb3 / (0T11)Rg5 (1T11)Ne5>x(-1T11)e4
+14. (-1T12)Rd3 (0T12)d4 (1T12)b4 / (-1T12)c4 (0T12)c4 (1T12)cxb4
+15. (-1T13)Rd4 (0T13)d3 (1T13)Ba4+ / (-1T13)O-O-O {to the left} (0T13)cxd3 (1T13)Bc5
+16. (-1T14)Rxe4 (0T14)exd3 (1T14)Bxc5+ / (0T14)Bg2 (-1T14)Nd5>x(1T14)c5
+17. (-1T15)Rc4 (0T15)Rc6 (1T15)Ra5 / (-1T15)e5 (0T15)Bd3+ (1T15)Ne4
+18. (-1T16)Rb4+ (0T16)Kg1 (1T16)Nxe4 / (-1T16)Kb7>x(0T16)c6 (1T16)dxe4
+19. (-1T17)Rb4>(1T17)b4 (0T17)Bxg5 / (-1T17)Bc4 (0T17)Bc4 (1T17)Nd5
+20. (-1T18)Be3 (0T18)Rc1 (1T18)Rd4 / (-1T18)Rd7 (0T18)Kc6>(1T18)b6?
+21. (-1T19)Bb6+ {checks (1T19)d6} (0T19)Rb1 (1T19)Raxd5+ / (-1T19)c6>(0T19)c6 {blocks (-1T20)Bb6>>x(1T20)d6 1-0} (1T19)exd5
+22. (-1T20)Bb6>x(0T20)b7+ {checks (1T20)d7} (1T20)Rxd5+ / (-1T20)Bc4>>x(-1T18)a4
+23. (-2T19)Bb6 / (-2T19)Rb7
+24. (-2T20)Bb6>>x(-1T20)a6+ {checks (1T20)b6, (2T20)b6 also checks (1T19)b6} 1-0 {Black forfeits}
+'''
+nota = shed2dyna(nota)
+print(nota.topologic())
+```
 
 
 
