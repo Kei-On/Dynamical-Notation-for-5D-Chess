@@ -40,7 +40,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 23. (-2T19)Bb6 / (-2T19)Rb7
 ```
 
-#### Dynamical Notation algebraical presentation
+#### Dynamical notation algebraical presentation
 ```
 <0T1>1[Nd3] <0T1>1.5[Nc5] <0T2>2[Nxc5+] <0T2>2.5[bxc5] <0T3>3[g3] <0T3>3.5[g4] 
 <0T4>4[Bg2] <0T4>4.5[d5] <0T5>5[O-O] <0T5>5.5[Be5] <0T6>6[Nb1>>(0T5)b3] <1T5>6.5[Bb6] <1T6>7[Nc3] <0T6>7.5[Ne7>(1T6)e5] 
@@ -61,7 +61,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 
 <-2T19>23[Bb6] <-2T19>23.5[Rb7]
 ```
 
-#### Dynamical Notation topological presentation
+#### Dynamical notation topological presentation (vertical)
 ```
                                                                <0T1>1[Nd3] / <0T1>1.5[Nc5]                                                                                                                                                                                                  
                                                                <0T2>2[Nxc5+] / <0T2>2.5[bxc5]                                                                                                                                                                                               
@@ -125,6 +125,8 @@ We want to overwrite some terms, and add some new terms.
 
 ## Syntax
 
-## 
+## Playground
+
+
 
 
