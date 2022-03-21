@@ -32,4 +32,7 @@ We want to overwrite some terms, and add some new terms.
 * A **move** is move from Shad's notation, writen between `[` and `]`. 
 * The operation **#** is defined by `A#B:=A+0.5-0.5^B (if A>=0), A#B:=-((-A)#B) (if A<0)`. The expression `A#B` is read as "the B-th A". Note that `A#1=A`, `A#B<A#C if B<C`, `A#B<C#B if A<C`, and `A#B-A-1 converges to +0 when B converges to +inf`. 
 * A **step** is a rational number `S=A#B, where A=n/2, n and B are natrual numbers`, writen with the prefix "S". If writen between a **cell's coordinate** and a **move**, the prefix "S" can be omitted(recommanded). Steps can be writen only in its decimal form or its `A#B` form, where `A=n/2, n and B are natrual numbers`. For example `<4T5>S5.5#2[e3], <4T5>S5.75[e3], <4T5>5.5#2[e3], and <4T5>5.75[e3]` are all equivalent. 
-* A **cell** is a **cell's coordinate** writen along with a **step** and a **move** with no space added in between. For instance, the python expression `"<{}T{}>{}#{}[{}]".format(turn,line,step,substep,move)` returns a **legal cell**, if `turn` and `line` are integers, `step=n/2, n and substep are natrual numbers`, and `move` is a legal move from Shad's notation, and otherwise returns an **illegal cell**. 
+* A **cell** is a **cell's coordinate** writen along with a **step** and a **move** with no space added in between. For instance, `<4T5>S5.5#2[e3], <4T5>S5.75[e3], <4T5>5.5#2[e3], and <4T5>5.75[e3]` are all cells. 
+* The python expression `"<{}T{}>{}#{}[{}]".format(turn,line,step,substep,move)` returns a **legal cell**, if `turn` and `line` are integers, `step=n/2, n and substep are natrual numbers`, and `move` is a legal move from Shad's notation, and otherwise returns an **illegal cell**. 
+
+
