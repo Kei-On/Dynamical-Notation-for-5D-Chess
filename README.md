@@ -32,8 +32,11 @@ aside from this, turns are separated with /.
 
 ## Term Extension
 We want to overwrite some terms, and add some new terms. 
-* A **turn** is a natural number with the prefix "T". 
-* A **line** is an integer with the prefix "L". 
-* A **move** is the creation of
-* The operation **#** is defined by `A#B:=A+0.5-0.5^B (if A>=0), A#B:=-((-A)#B) (if A<0)`. The expression `A#B` is read as "the B-th A". Note that `A#1=A`, `A#B<A#C if B<C`, `A#B<C#B if A<C`, and `A#B-A-1->+0 if B->+inf`. 
-* A **step** is a rational number `S=A#B, where A=n/2 (n are integers), and B are natrual numbers`. 
+* A **turn** is a integer writen with the prefix "T". 
+* A **line** is an integer writen with the prefix "L". If writen along with a **turn**, the prefix "L" can be omitted. 
+* A **time-space coordinate** is a **line** writen along with a **turn**. For instance `L4T5` or `4T5 (recommended)`, if the **line** prefix is omitted. 
+* A **cell's coordinate** is a **time-space coordinate** writen between `<` and `>`. For instance `<4T5>`. 
+* A **move** is move from Shad's-5D-chess-algebraic-notation, writen between `[` and `]`. 
+* The operation **#** is defined by `A#B:=A+0.5-0.5^B (if A>=0), A#B:=-((-A)#B) (if A<0)`. The expression `A#B` is read as "the B-th A". Note that `A#1=A`, `A#B<A#C if B<C`, `A#B<C#B if A<C`, and `A#B-A-1 converges to +0 when B converges to +inf`. 
+* A **step** is a rational number `S=A#B, where A=n/2, n and B are natrual numbers`, writen with the prefix "S". If writen between a **cell's coordinate** and a **move**, the prefix "S" can be omitted(recommanded). Steps can be writen only in its decimal form or its `A#B` form, where `A=n/2, n and B are natrual numbers`. For example `<4T5>S5.5#2[e3], <4T5>S5.75[e3], <4T5>5.5#2[e3], and <4T5>5.75[e3]` are all equivalent. 
+* A **cell** is **cell's coordinate** writen along with a **step** and a **move** with no spaces in between. For instance, the python expression `"<{}T{}>{}#{}[{}]".format(turn,line,step,substep,move)` returns a **cell**. 
