@@ -36,4 +36,4 @@ We want to overwrite some terms, and add some new terms.
 * A **line** is an integer with the prefix "L". 
 * A **move** is the creation of
 * The operation **#** is defined by `A#B:=A+0.5-0.5^B (if A>=0), A#B:=-((-A)#B) (if A<0)`. The expression `A#B` is read as "the B-th A". Note that `A#1=A`, `A#B<A#C if B<C`, `A#B<C#B if A<C`. 
-* A **step** is a number `s=a#b`, where `a` is a 
+* A **step** is a number `S=A#B, where A=n/2 (n are integers), and B are natrual numbers`. 
