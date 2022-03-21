@@ -35,6 +35,4 @@ We want to overwrite some terms, and add some new terms.
 * A **turn** is a natural number with the prefix "T". 
 * A **line** is an integer with the prefix "L". 
 * A **move** is the creation of
-* Define 
-*        a#b := a+0.5-0.5^b (for a=n/2, n=2,3,4,5...)
-*        a#b := -((-a)#b)   (for a=-n/2, n=2,3,4,5...)
+* Define $a#b := a+0.5-0.5^b (for a=n/2, n=2,3,4,5...), a#b := -((-a)#b)   (for a=-n/2, n=2,3,4,5...)$
