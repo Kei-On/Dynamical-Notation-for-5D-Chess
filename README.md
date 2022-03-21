@@ -107,7 +107,7 @@ aside from this, turns are separated with /.
 * **Physical** coordinates and moves are coordinates and moves within a single board.
 * **Super-physical** coordinates and moves are those that span across boards. Both time- and multiverse travels are super-physical moves or jumps.
 
-## Term Extension
+### Term extension
 We want to overwrite some terms, and add some new terms. 
 * A **turn** is a integer writen with the prefix "T". 
 * A **line** is an integer writen with the prefix "L". If writen along with a **turn**, the prefix "L" can be omitted. 
