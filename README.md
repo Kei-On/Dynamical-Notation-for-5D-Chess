@@ -1,7 +1,21 @@
 # Krakenmagen's Dynamical Notation for 5D-Chess
 A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 5D chess algebraic notation**
 
-## [Shad's 5D Chess Algebraic Notation](https://github.com/adri326/5dchess-notation/)
+## Pro and Cons
+### Pros
+* Flexible. Can be easily modified by codes. 
+* Can be demonstrated both algebraically and topologically. 
+* Contains information of parallel actions during one turn. 
+* Contains information of which action causes creation of which board/timeline. 
+
+### Cons
+* More text needed, which causes hardness for nearsighted people to read. 
+* The topological presentation involves a huge amount of spaces, which rapidly increases the file size.  
+
+### Example
+
+
+## Recall: [Shad's 5D Chess Algebraic Notation](https://github.com/adri326/5dchess-notation/)
  
 > Shad’s notation is meant to work with his engine, which means machine readability was a primary concern when creating the notation. The examples of this notation contain a header which mimics PGN. 
 > 
@@ -40,5 +54,7 @@ We want to overwrite some terms, and add some new terms.
 * A **(Krakenmagen's) dynamical notation (for 5D chess)** is a text that contains at least one **legal cell**. 
 
 ## Syntax
+
+## 
 
 
