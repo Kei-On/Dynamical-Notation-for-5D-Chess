@@ -1,5 +1,5 @@
 # Krakenmagen's Dynamical Notation for 5D Chess
-A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on **Shad's 5D chess algebraic notation**
+A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on [Shad's 5D Chess Algebraic Notation](https://github.com/adri326/5dchess-notation/)
 
 ## Pro and Cons
 ### Pros
@@ -97,7 +97,7 @@ aside from this, turns are separated with /.
 >
 > *quoted from [5D Chess Notation Standard Proposal](https://docs.google.com/document/d/1-SnsdYIzrGao0ToyGXSaoEd_0tYKxYePO1C-Bp5ziXA/edit#)*
 
-## Recall from [Shad's Notation](https://github.com/adri326/5dchess-notation/)
+### Recall on terms
 * A **turn** is an alternation between white's sub-turn and black's sub-turn. Each player may only make moves during their (sub-)turn. This differs from a board step, as playing on some boards becomes optionnal when new timelines are created.
 * A **move** happens when a player moves one of their pieces to a legal position. Moves that were not submitted with the submit button yet are referred to as temporary moves, but we will only consider moves that were already submitted.
 * A **board** is the state of the chess board at any point in time. Each time a player moves a piece, one or two new board(s) is/are created, with the new piece disposition(s).
