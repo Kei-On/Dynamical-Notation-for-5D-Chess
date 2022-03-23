@@ -207,7 +207,8 @@ dyna = Dyna5D.loadShed('''[White "Teln0"]
 23. (-2T19)Bb6 / (-2T19)Rb7
 24. (-2T20)Bb6>>x(-1T20)a6+ {checks (1T20)b6, (2T20)b6 also checks (1T19)b6} 1-0 {Black forfeits}
 ''')
-print(dyna.topo())
+print(dyna.topological())
+print(dyna.algebraic())
 ```
  
  
