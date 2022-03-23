@@ -17,8 +17,8 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on [Shad's 5
 * More text needed, which causes hardness for nearsighted people to read. 
 * The topological formulation involves a huge amount of spaces, which rapidly increases the file size.  
 
-### Comparism
-#### Shad's Notation
+## Comparism
+### Shad's Notation
 ```
 [White "Teln0"]
 [Black "Shad Amethyst"]
@@ -53,7 +53,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on [Shad's 5
 23. (-2T19)Bb6 / (-2T19)Rb7
 24. (-2T20)Bb6>>x(-1T20)a6+ {checks (1T20)b6, (2T20)b6 also checks (1T19)b6} 1-0 {Black forfeits}
 ```
-#### Dynamical notation topological formulation (vertical)
+### Dynamical notation topological formulation (vertical)
 ```
 [White "Teln0"]
 [Black "Shad Amethyst"]
@@ -85,7 +85,7 @@ A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on [Shad's 5
 (2T20)-24    [(-2T20)Bb6>>x(-1T20)a6+@]   ||   (1T20)22#2   [Rxd5+]                                       ||   (0T20)-22    [(-1T20)Bb6>xb7+]                                  ||   (-1T20)22     [Bb6>x(0T20)b7+]    22.5   [Bc4>>x(-1T18)a4@(-2T18)]   ||   (-2T20)24     [Bb6>>x(-1T20)a6+@(2T20)]       
 ```
 
-#### Dynamical notation algebraical formulation
+### Dynamical notation algebraical formulation
 ```
 [White "Teln0"]
 [Black "Shad Amethyst"]
