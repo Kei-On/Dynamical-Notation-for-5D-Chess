@@ -165,7 +165,14 @@ aside from this, turns are separated with /.
 ## Playground
 A roughly achieved python approach to the realization of converting Shad's notation to dynamical notation is presented [here](https://github.com/Kei-On/Dynamical-Notation-for-5D-Chess/blob/main/dyna5D.py). See usage: 
 ```
-nota = '''
+dyna = Dyna5D.loadShed('''[White "Teln0"]
+[Black "Shad Amethyst"]
+[Board "Simple - No Queens"]
+[Size "7x7"]
+[Date "2020.08.14"]
+[Result "1-0"]
+[Mode "5D"]
+
 1. (0T1)Nd3 / (0T1)Nc5
 2. (0T2)Nxc5+ / (0T2)bxc5
 3. (0T3)g3 / (0T3)g4
@@ -190,9 +197,8 @@ nota = '''
 22. (-1T20)Bb6>x(0T20)b7+ {checks (1T20)d7} (1T20)Rxd5+ / (-1T20)Bc4>>x(-1T18)a4
 23. (-2T19)Bb6 / (-2T19)Rb7
 24. (-2T20)Bb6>>x(-1T20)a6+ {checks (1T20)b6, (2T20)b6 also checks (1T19)b6} 1-0 {Black forfeits}
-'''
-nota = shed2dyna(nota)
-print(nota.topologic())
+''')
+print(dyna.topo())
 ```
  
  
