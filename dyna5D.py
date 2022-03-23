@@ -39,7 +39,7 @@ class Dyna5D(str):
         return float(a) + 0.5 - 0.5 ** float(b)
       return float(a)
     else:
-      return -Dyna5D.f2s(step[1:])
+      return -Dyna5D.s2f(step[1:])
   
   def f2s(step):
     if step>=0:
@@ -172,7 +172,7 @@ class Dyna5D(str):
         arr[l-Lmin,t-Tmin]=[cell]
     return arr
 
-  def topo(self,cordwidth = "{:<6}", stepwidth = "{:<7}",movewidth = "{:<20}",space = 3):
+  def topological(self,cordwidth = "{:<6}", stepwidth = "{:<7}",movewidth = "{:<20}",space = 3):
     arr = self.array()
     a,b = arr.shape
     A = np.empty((a,b),dtype = object)
@@ -210,19 +210,21 @@ class Dyna5D(str):
       ans += "\n"
     return ans
 
-  def algebra(self):
+  def algebraic(self):
     cells = self.cells()
     ans = self.metadata()
     for cell in cells:
       cord,step,move = re.match(Dyna5D.cell,cell).group("cord","step","move")
       s,k = re.search(Dyna5D.step,step).group("s","k")
       s = float(s)
-      if s>0:
-        if not(k) and int(2*s)==2*s:
-          ans += "\n"
-        l,t = re.match(Dyna5D.cord,cord).group("l","t")
-        s = Dyna5D.s2f(step)
-        if int(s) == s:
-          s = int(s)
-        ans += "{:<8}{:<7}{:20}".format(cord,s,re.sub("\(L?{}T{}\)".format(l,t),"",move))
+      if not(k) and int(2*s)==2*s and s>0:
+        ans += "\n"
+      l,t = re.match(Dyna5D.cord,cord).group("l","t")
+      s = Dyna5D.s2f(step)
+      if int(s) == s:
+        s = int(s)
+      s = str(s)
+      if s[0]!="-":
+        s = " " + s
+      ans += "{:<8}{:<7}{:20}".format(cord,s,re.sub("\(L?{}T{}\)".format(l,t),"",move))
     return ans
