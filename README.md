@@ -1,8 +1,8 @@
 # Krakenmagen's Dynamical Notation for 5D Chess
 A dynamical notation for 5D-Chess-with-Multiverse-Time-Travel based on [Shad's 5D Chess Algebraic Notation](https://github.com/adri326/5dchess-notation/)
 
-## Explaination
-[An explaination to the dynamical notation](https://docs.google.com/document/d/1UaosxcunDfuQedIi3b-415n_dxPRMQRGKZzSQyJNT9Q/edit?usp=sharing). 
+## Explanation
+[An explanation to the dynamical notation](https://docs.google.com/document/d/1UaosxcunDfuQedIi3b-415n_dxPRMQRGKZzSQyJNT9Q/edit?usp=sharing). 
 
 ## Pro and Cons
 ### Pros
